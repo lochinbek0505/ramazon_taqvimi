@@ -16,8 +16,13 @@ async def start_command(message: types.Message):
         ],
         resize_keyboard=True
     )
-    await message.answer("👋 Assalomu alaykum! Web App-ni ochish uchun tugmani bosing:", reply_markup=keyboard)
-
+    await message.answer(
+    "👋 Assalomu alaykum!\n\n"
+    "Web App-ni ochish uchun tugmani bosing:\n"
+    "📲 Bizning ilovamizni yuklab oling(https://t.me/ramazon_time_mobile/13)",
+    reply_markup=keyboard,
+    disable_web_page_preview=True
+)
 async def main():
     print("Bot ishga tushdi!")
     await dp.start_polling(bot)
