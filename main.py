@@ -2,8 +2,8 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
 import asyncio
 
-TOKEN = "7981476993:AAHjGHZVxwx1FTPuUoBITJAUHMZ3lDIxb1o"
-WEB_APP_URL = "https://namoz-time.web.app/"
+TOKEN = "7802726591:AAHxS4-VDPwG4tu-56MqFwGgVq1Up4AN_-Q"
+WEB_APP_URL = "https://shopapp3-9dfa3.web.app/"
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
@@ -19,8 +19,7 @@ async def start_command(message: types.Message):
     await message.answer(
     "👋 Assalomu alaykum!\n\n"
     "Web App-ni ochish uchun tugmani bosing:\n"
-    "📲 Bizning ilovamizni yuklab oling(https://t.me/ramazon_time_mobile/13)",
-    reply_markup=keyboard,
+,    reply_markup=keyboard,
     disable_web_page_preview=True
 )
 async def main():
